@@ -1,0 +1,1 @@
+{"version":3,"sources":["script.js"],"names":["console","log","app"],"mappings":"AAAAA,QAAAC,IAAA,kBAGA,IAAAC,IAAA","file":"all.js","sourcesContent":["console.log(\"Load script.js\");\n\n// Instantiating the global app object\nvar app = {};\n"]}

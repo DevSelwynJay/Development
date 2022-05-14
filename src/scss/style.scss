@@ -143,7 +143,6 @@ hr{
     width: 100%;
     overflow: hidden;
     padding-top: 56.25%;
-
      iframe{
         position: absolute;
         top: 0;
@@ -183,50 +182,50 @@ hr{
         display: block;
     }
 }
- .text-color-black-100{
-    color: $black-100;
- }
- .text-color-black-500{
-    color: $black-500;
- }
- .text-color-blue-100{
-    color: $blue-100;
+.text-color-black-100{
+color: $black-100;
+}
+.text-color-black-500{
+color: $black-500;
+}
+.text-color-blue-100{
+color: $blue-100;
 }
 .text-color-black-50{
-    color: $black-50;
+color: $black-50;
 }
- .text-right{
-     text-align: right;
- }
- .d-flex{
-     display: flex;
- }
- .flex-end{
-     justify-content: flex-end;
- }
- .fw-700{
-     font-weight: 700;
- }
- .fs-12{
-  font-size: 12px;
- }
- .fs-14{
-    font-size: 14px;  
+.text-right{
+    text-align: right;
+}
+.d-flex{
+    display: flex;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.fw-700{
+    font-weight: 700;
+}
+.fs-12{
+font-size: 12px;
+}
+.fs-14{
+font-size: 14px;  
 }
 .fs-16{
-    font-size: 16px;  
+font-size: 16px;  
 }
 .fs-13{
-    font-size: 13px;
+font-size: 13px;
 }
 .fs-10{
-    font-size: 10px;
+font-size: 10px;
 }
 .fs-24{
-    font-size: 24px;
+font-size: 24px;
 }
 .d-inline-block{
-    display: inline-block;
+display: inline-block;
 }
 
 /***** SECTIONS *****/
@@ -234,7 +233,6 @@ hr{
     background-color: $blue-400;
     color: #fff;
     padding: 20px 0;
-
     .register-banner-container{
         display: flex;
         justify-content: center;
@@ -244,7 +242,6 @@ hr{
 }
 
 header{
-
     .top-nav{
         padding: 12px 0;
         .search{
@@ -350,7 +347,6 @@ header{
             }
         }
     }
-
 }
 
 main{

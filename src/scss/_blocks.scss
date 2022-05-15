@@ -1,0 +1,166 @@
+.register-banner {
+    background-color: $blue-400;
+    color: #fff;
+    padding: 15px 0;
+    .register-banner-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+    }
+  }
+  .apply-banner {
+    border: 1px solid $green;
+    border-radius: 8px;
+    padding: 32px;
+    text-align: center;
+  }
+  
+  header {
+    .top-nav {
+      padding: 12px 0;
+      .search {
+        position: relative;
+        input {
+          outline: none;
+          border: none;
+          background-color: $light-grey;
+          height: 32px;
+          width: 100%;
+          padding-left: 2rem;
+          border-radius: 4px;
+        }
+        &::before {
+          content: url("https://api.iconify.design/akar-icons/search.svg?width=14");
+          position: absolute;
+          left: 0.5rem;
+          transform: translateY(-50%);
+          top: 52%;
+        }
+      }
+      .cta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .user {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 6px;
+        .name {
+          font-size: 11px;
+          position: relative;
+          padding-right: 0.8rem;
+          background-color: transparent;
+          outline: none;
+          border: none;
+          cursor: pointer;
+  
+          span {
+            font-weight: 700;
+          }
+  
+          &::after {
+            content: url("https://api.iconify.design/bxs/down-arrow.svg?width=10");
+            position: absolute;
+            right: 0;
+            transform: translateY(-50%);
+            top: 57%;
+          }
+        }
+      }
+    }
+  
+    .main-nav {
+      padding: 22px 0;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          list-style: none;
+          padding-bottom: 0.3rem;
+          a {
+            font-size: 17px;
+            display: inline-block;
+            color: #000;
+          }
+  
+          &:hover {
+            border-bottom: 2px solid #000;
+          }
+        }
+        li.has-dropdown {
+          a {
+            position: relative;
+            padding-right: 1.2rem;
+            &::after {
+              content: url("https://api.iconify.design/fe/arrow-down.svg?width=18");
+              position: absolute;
+              right: 0;
+              top: 60%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+        li.has-dropdown-open {
+          a {
+            position: relative;
+            padding-right: 1.2rem;
+            &::after {
+              content: url("https://api.iconify.design/fe/arrow-up.svg?width=18");
+              position: absolute;
+              right: 0;
+              top: 60%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+        li.active {
+          border-bottom: 2px solid #000;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  
+  main {
+    padding: 30px 0;
+  }
+  
+  footer {
+    padding: 0 0 60px 0;
+    .container {
+      border-top: 2px solid $light-grey;
+      padding-top: 1rem;
+    }
+    .title {
+      color: $blue-100;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  
+  .sub-footer {
+    .container {
+      border-top: 2px solid $light-grey;
+      padding-top: 1rem;
+    }
+    ul{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      justify-content: flex-end;
+      li{
+         a{
+           color: $black-100;
+         }
+      }
+    }
+  }
+  

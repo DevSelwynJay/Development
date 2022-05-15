@@ -1,0 +1,205 @@
+  .button-white {
+    border-radius: 12px;
+    color: $black-200;
+    background-color: #fff;
+    padding: 6px 10px;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    font-size: 9px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .button-blue-outline-small {
+    border: 1px solid $blue-400;
+    font-weight: 700;
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    color: $blue-400;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .button-blue-outline {
+    border: 1px solid $blue-100;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    color: $blue-100;
+    height: 36px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 24px;
+    cursor: pointer;
+  }
+  .button-blue {
+    background-color: $blue-100;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    color: #fff;
+    height: 42px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 24px;
+    letter-spacing: 0.14px;
+    cursor: pointer;
+
+    &.size-small{
+      width: 128px;
+    }
+    &.size-large{
+      width: 100%;
+    }
+  }
+  .button-green {
+    background-color: $green;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    color: #fff;
+    height: 44px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 24px;
+    letter-spacing: 0.14px;
+    cursor: pointer;
+  }
+  .button-yellow {
+    background-color: $yellow-100;
+    font-weight: 700;
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    color: #000;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .button-showmore {
+    color: $blue-100;
+    font-weight: 700;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+  }
+  .button-sort {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: $black-200;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+  }
+  .button-like {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  .button-dislike {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  .button-reply {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    color: $black-200;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+  .button-view-replies {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    color: $blue-300;
+    display: flex;
+    align-items: center;
+  }
+
+  .video {
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  }
+
+  .card {
+    box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24),
+      0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+    border-radius: 7px 7px 3px 3px;
+    padding: 30px;
+  }
+
+  .logo {
+    font-family: "Poppins", sans-serif;
+    line-height: 30.51px;
+    letter-spacing: 3.07px;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-right: 1rem;
+    &::before {
+      content: url("https://api.iconify.design/bx/plus-medical.svg?color=%23ffc700&width=14");
+      position: absolute;
+      right: 0;
+    }
+    &::after {
+      content: "";
+      background-color: $yellow-100;
+      height: 3px;
+      width: 120px;
+      display: block;
+    }
+  }
+
+  .progress{
+    border: none;
+    border-radius: 9999px;
+    display: block;
+    height: .6rem;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    &::-moz-progress-bar{
+      background-color: $green-100;
+    }
+  }

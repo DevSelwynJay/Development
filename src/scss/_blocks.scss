@@ -1,7 +1,12 @@
 .register-banner {
     background-color: $blue-400;
     color: #fff;
-    padding: 15px 0;
+    padding: 15px 1.5rem;
+    display: none;
+    @media(min-width: 1217px){
+      display: block;
+    }
+
     .register-banner-container {
       display: flex;
       justify-content: center;
@@ -18,7 +23,13 @@
   
   header {
     .top-nav {
-      padding: 12px 0;
+      padding: 12px 1.5rem;
+      display: none;
+
+      @media(min-width: 1217px){
+        display: block;
+      }
+
       .search {
         position: relative;
         input {
@@ -74,6 +85,12 @@
   
     .main-nav {
       padding: 22px 0;
+      display: none;
+
+      @media(min-width: 1217px){
+        display: block;
+      }
+
       ul {
         display: flex;
         justify-content: space-between;
@@ -122,10 +139,28 @@
         }
       }
     }
+
+    .mobile-nav{
+      background-color: $blue-400;
+      padding: 1rem 1.5rem;
+      @media(min-width: 1217px){
+        display: none;
+      }
+      .burger-menu{
+        text-align: right;
+      }
+    }
+
   }
   
   main {
     padding: 30px 0;
+    .main-columns{
+      @media(max-width: 768px){
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
   }
   
   footer {
@@ -147,6 +182,10 @@
   }
   
   .sub-footer {
+    text-align: center;
+    @media(min-width: 769px){
+      text-align: left;
+    }
     .container {
       border-top: 2px solid $light-grey;
       padding-top: 1rem;
@@ -155,7 +194,10 @@
       display: flex;
       align-items: center;
       gap: 1rem;
-      justify-content: flex-end;
+      justify-content: center;
+      @media(min-width: 769px){
+        justify-content: flex-end;
+      }
       li{
          a{
            color: $black-100;

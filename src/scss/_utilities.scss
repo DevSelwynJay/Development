@@ -12,6 +12,9 @@
   .text-color-black {
     color: #000;
   }
+  .text-color-white{
+    color: #fff;
+  }
   .text-color-black-100 {
     color: $black-100;
   }
@@ -34,8 +37,15 @@
     color: $blue-400;
   }
   
-  .text-right {
-    text-align: right;
+  .text-right-sm {
+    @media(min-width: 769px){
+      text-align: right;
+    }
+  }
+  .ml-auto-sm{
+    @media(min-width: 769px){
+      margin-left: auto;
+    }
   }
   .text-center {
     text-align: center;

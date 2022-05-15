@@ -29,10 +29,26 @@
 
       <header>
 
+          <!--MOBILE NAV-->
+          <div class="mobile-nav">
+            <div class="container">
+               <div class="is-flex is-align-items-center is-justify-content-space-between">
+                  <a>
+                      <img src="./src/images/nhb.png" alt="nhb.png" width="100px">
+                  </a>
+                  <div>
+                   <a class="burger-menu">
+                      <span class="iconify" data-icon="quill:hamburger" style="color: white;" data-width="32"></span>
+                   </a>
+                  </div>
+               </div>
+            </div>
+          </div>
+
          <!--TOP NAV-->
          <div class="top-nav">
             <div class="container">
-               <div class="columns">
+               <div class="columns top-nav-columns">
                   <div class="column is-3">
                      <div class="logo">
                         NOTHING HELD BACK
@@ -88,22 +104,6 @@
                   <li><a href="">The Community</a></li>
                </ul>
             </div>
-         </div>
-
-         <!--MOBILE NAV-->
-         <div class="mobile-nav">
-           <div class="container">
-              <div class="is-flex is-align-items-center is-justify-content-space-between">
-                 <a>
-                     <img src="./src/images/nhb.png" alt="nhb.png" width="100px">
-                 </a>
-                 <div>
-                  <div class="burger-menu">
-                     <span class="iconify" data-icon="quill:hamburger" style="color: white;" data-width="32"></span>
-                  </div>
-                 </div>
-              </div>
-           </div>
          </div>
 
       </header>
@@ -661,6 +661,24 @@
             </div>
          </div>
       </div>
+
+
+      <script>
+         var toggle = document.querySelector(".burger-menu");
+         var mobile_top_nav = document.querySelector(".top-nav");
+         var mobile_main_nav = document.querySelector(".main-nav");
+
+         toggle.addEventListener('click',function(){
+         if(mobile_top_nav.classList.contains('show')){ 
+            mobile_top_nav.classList.remove('show');
+            mobile_main_nav.classList.remove('show');
+         }
+         else{ 
+            mobile_top_nav.classList.add('show');
+            mobile_main_nav.classList.add('show');
+         }});
+
+      </script>
 
    </body>
 </html>
